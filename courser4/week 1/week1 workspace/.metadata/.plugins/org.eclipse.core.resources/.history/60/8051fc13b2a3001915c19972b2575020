@@ -1,0 +1,19 @@
+package module1;
+import processing.core.PApplet;
+import processing.core.PImage;
+public class myApplet extends PApplet{
+	private String URL = "palmTrees.jpg";
+	private PImage backgroundImg;
+	public void setup() {
+		size(400,400);
+		background(250,250,250);
+		backgroundImg = loadImage("palmTrees.jpg","jpg");
+		
+	}
+	public void draw() {
+		backgroundImg.resize(0,height);
+		image(backgroundImg,0,0);
+		fill(250,200,0);
+		ellipse(50,50,width/5,height/5);
+	}
+}

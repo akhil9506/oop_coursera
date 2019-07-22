@@ -1,0 +1,9 @@
+package guimodule;
+import processing.core.PApplet;
+import processing.core.PImage;
+public class pApplet extends PApplet {
+	PImage img;
+	public void setUp(){
+		size(400,200);
+	}
+}
